@@ -24,6 +24,7 @@ class TodoForm extends Component {
 
   handleSubmit(e){
     e.preventDefault();
+    this.props.onAddTodo(this.state);
     console.log('sending data...');
 
   }
