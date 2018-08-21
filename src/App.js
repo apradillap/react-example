@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     const todos = this.state.todos.map((todo, i) => {
       return (
-        <div className="card mt-4">
+        <div className="card mt-4 ml-2">
           <div className="card-header">
             <h3>{ todo.title }</h3>
             <span className="badge badge-pill badge-danger ml-2">
@@ -37,7 +37,7 @@ class App extends Component {
     console.log('Antes de renderizar el componente')
     return (
       <div className="App">
-        <Navigation title={this.state.title}/>
+        <Navigation title={ this.state.title } todosSize={ this.state.todos.length }/>
 
         <div className="container">
           <div className="row mt-4">

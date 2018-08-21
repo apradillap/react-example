@@ -7,6 +7,9 @@ class Navigation extends Component {
         <a href="" className="text-white">
           { this.props.title }
         </a>
+        <span className="badge badge-pill badge-light ml2">
+          { this.props.todosSize }
+        </span>
       </nav>
     );
   }
